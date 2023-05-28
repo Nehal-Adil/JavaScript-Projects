@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(167, 214, 255); */
+    color: black;
+    line-height: 1.5;
+    font-size: 1.75rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+Nav
+===============
+*/
+
+nav{
+    /* border: 2px solid rgb(255, 0, 0); */
+    background-color: white;
+    padding: 1rem 5rem;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 29%);
+}
+
+.nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header{
+    display: flex;
+}
+
+.nav-header button{
+    
+    right: 0px;
+}
+
+.nav-header h1{
+    font-size: 3rem;
+    color: rgb(71 145 255);
+    padding: 0rem 0.4rem;
+    font-family: 'Saira Condensed', sans-serif;
+    text-shadow: 4px 3px 1px #a8d8ff;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
+    color: black;
+    padding: 0rem 1rem;
+    font-weight: 600;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials > li{
+    padding: 0rem 0.5rem;
+}
+
+i{
+    color: rgb(61, 168, 255);
+}
+
+nav i:hover{
+    color: rgb(241, 152, 152);
+    font-weight: 700;
+}
+
+.toggle-menu{
+    position: absolute;
+    top: 2.75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.toggle-menu .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/*
+Footer
+===============
+*/
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    /* background-color: rgb(137 131 131); */
+    font-family: 'Roboto', sans-serif;
+}

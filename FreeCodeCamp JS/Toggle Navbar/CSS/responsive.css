@@ -1,0 +1,30 @@
+@media (max-width: 1050px){
+    nav{
+        padding: 1rem 0.5rem;
+    }
+
+    .toggle-menu{
+        display: flex;
+    }
+
+    .socials{
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-center{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.show-links{
+        display: flex;
+    }
+
+}
