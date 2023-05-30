@@ -1,0 +1,178 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(219, 238, 255);
+    color: black;
+    line-height: 1.5;
+    font-size: 1.75rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+Header
+===============
+*/
+
+.sidebar-toggle {
+    position: fixed;
+    top: 1.75rem;
+    right: 3rem;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    animation: toggle-btn 2s ease-in-out infinite;
+}
+
+.sidebar-toggle i{
+    color: rgb(83, 123, 255);
+    font-size: 2rem;
+}
+
+.sidebar-toggle i:hover {
+    color: blue;
+}
+
+@keyframes toggle-btn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 
+Sidebar
+===============
+*/
+
+.sidebar{
+    /* border: 2px solid salmon; */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-100%);
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+
+.sidebar-header{
+    display: flex;
+}
+
+.sidebar-header h1{
+    font-size: 3rem;
+    color: rgb(71 145 255);
+    padding: 0.5rem 2rem;
+    font-family: 'Saira Condensed', sans-serif;
+    text-shadow: 4px 3px 1px #a8d8ff;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.close-btn {
+    background: transparent;
+    border-color: transparent;
+    color: red;
+    transition: all 0.3s linear;
+    cursor: pointer;
+ }
+
+.close-btn:hover {
+    color: red;
+    transform: rotate(270deg);
+}
+
+.close-btn i{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.links{
+    display: block;
+}
+
+.links li{
+    display: list-item;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.links a{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(103 125 152);
+    transition: all 0.3s linear;    
+}
+
+.links li:hover{
+    background-color: #c2e1fa;
+    
+}
+
+.links a:hover{
+    color: #1f5bff;    
+    padding: 0.5rem;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+.socials > li{
+    padding: 2rem 0.6rem;
+}
+
+.socials i{
+    color: rgb(61, 168, 255);
+}
+
+/*
+Footer
+===============
+*/
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
