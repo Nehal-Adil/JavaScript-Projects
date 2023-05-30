@@ -1,0 +1,41 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --bg-light-red: rgb(255, 128, 128);
+}
+
+.container{
+    background-color: var(--bg-light-red);
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    border-radius: 13px;
+}
+
+.button{
+    padding: 1rem;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row{
+    margin: 6px 0px;
+}
+
+.row input{
+    width: 210px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 6px;
+    font-size: 23px;
+    padding: 5px 0px;
+}
