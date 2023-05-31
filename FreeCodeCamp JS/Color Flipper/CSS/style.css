@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(167, 214, 255); */
+    color: black;
+    line-height: 1.5;
+    font-size: 1.75rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+
+}
+
+/*
+Nav
+===============
+*/
+
+nav{
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 1rem 5rem;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 29%);
+}
+
+.nav-center{
+    display: flex;
+    font-size: 2.0rem;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav-center h3{
+    margin-bottom: auto;
+}
+
+.nav-links{
+    display: flex;
+
+}
+nav a{
+    font-size: 1.75rem;
+    margin-right: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: rgb(255 41 41);
+}
+
+nav a:hover{
+    color: rgb(241, 152, 152);
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+
+/*
+Container
+===============
+*/
+
+main{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.container{
+    /* border: 2px solid yellowgreen; */
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.container h2 {
+	/* border: 2px solid rgb(51, 255, 32); */
+	background: rgb(32, 32, 32);
+    color: rgb(240 248 255);
+    padding: 1.5rem 2.5rem;
+    border-radius: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: 10px 15px 20px rgb(0 0 0 / 29%);
+}
+.color {
+	color: rgb(255, 207, 77);
+	text-transform: uppercase;
+}
+
+.btnclass{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid rgb(255 255 255);
+    background: rgb(0 0 0 / 0%);
+    border-radius: 5rem;
+    background: rgb(216 216 216 / 33%);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 4px 4px 9px rgb(0 0 0 / 22%);
+}
+
+.btnclass:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.btnclass:active{
+    transform: translate(0, 0.5rem);
+}
+
+/*
+Footer
+===============
+*/
+
+footer{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    /* background-color: rgb(137 131 131); */
+    font-family: 'Roboto', sans-serif;
+}
