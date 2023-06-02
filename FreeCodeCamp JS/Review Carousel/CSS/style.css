@@ -1,0 +1,120 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207 232 255);
+    line-height: 1.5;
+}
+
+/*
+Container
+===============
+*/
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* border: 2px solid red; */
+    text-align: center;
+    max-width: 900px;
+}
+
+.title{
+    margin-bottom: 4rem;
+}
+.title h2{
+    font-size: 2.5rem;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    
+}
+.underline {
+    height: 0.27rem;
+    width: 7rem;
+    background-color: rgb(80 137 255);
+    margin: auto;
+    border-radius: 5rem;
+}
+
+.reviews{
+    /* border: 2px solid black; */
+    font-family: 'Noto Serif', serif;
+    padding: 1rem 1rem 3rem 1rem;
+    background-color: white;
+    width: 550px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-container img{
+    /* border: 2px solid rgb(72, 203, 255); */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 8px -4px 0px 3px rgb(120 179 255);
+}
+
+.author-container h4{
+    font-size: 1.75rem;
+}
+
+#job{
+    color: rgb(103, 151, 255);
+    margin-bottom: 0.5rem;
+}
+
+#info{
+    font-size: 1.2rem;
+}
+
+.button-container{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(139, 203, 249);
+    padding: 0.25rem;
+    margin: 0.5rem;
+}
+.button-container i{
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.random-btn{
+    border: 2px solid rgb(153 182 246);
+    border-radius: 13px;
+    color: rgb(80 80 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/*
+Footer
+===============
+*/
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    /* background-color: rgb(137 131 131); */
+    font-family: 'Roboto', sans-serif;
+}
