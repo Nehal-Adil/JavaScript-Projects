@@ -33,12 +33,12 @@ h1 {
   align-items: center;
   justify-content: space-around;
   border: none;
-  z-index: -2;
 }
 
 .play-pause span {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
   color: #ff0e0e;
 }
@@ -49,8 +49,12 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ff0e0e;
+  background: #ff5151;
   border-radius: 13px;
   margin: 0;
   display: block;
+}
+
+.slide .switch {
+  left: 50%;
 }
