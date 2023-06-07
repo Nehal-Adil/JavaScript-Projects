@@ -20,3 +20,37 @@ h1 {
   color: white;
   letter-spacing: 5mm;
 }
+
+/* Play-Pause Button */
+.play-pause {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  z-index: -2;
+}
+
+.play-pause span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #ff0e0e;
+}
+
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ff0e0e;
+  border-radius: 13px;
+  margin: 0;
+  display: block;
+}
