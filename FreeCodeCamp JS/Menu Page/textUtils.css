@@ -1,0 +1,23 @@
+:root {
+  --clr-purple: #665fc5;
+  --grad-white: rgba(179, 179, 179, 1) 17%,
+  --grad-grey: rgba(222, 222, 222, 1) 63%
+}
+.underline {
+  width: 7rem;
+  height: 0.25rem;
+  background: var(--clr-purple);
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
