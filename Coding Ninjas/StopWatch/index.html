@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stopwatch</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/input.css" />
+
+    <title>StopWatch</title>
   </head>
-  <body>
-    <div class=""></div>
+  <body class="bg-blue-400">
+    <!-- Heading -->
+    <h1 class="text-center text-4xl font-bold">StopWatch</h1>
+
+    <div class="container flex flex-col items-center my-14 h-screen">
+      <!-- Time Container -->
+      <div id="time" class="text-9xl">
+        <span id="hr">00</span>
+        <span class="">:</span>
+        <span id="min">00</span>
+        <span class="">:</span>
+        <span id="sec">00</span>
+      </div>
+
+      <!-- Button Container -->
+      <div id="btn-container" class="text-2xl my-16 text-white">
+        <button
+          id="start"
+          class="bg-green-600 border-2 border-black rounded-lg px-3 mx-4 w-32 h-10"
+          onclick="start()"
+        >
+          Start
+        </button>
+        <button
+          id="stop"
+          class="bg-blue-700 border-2 border-black rounded-lg px-3 mx-4 w-32 h-10"
+          onclick="stop()"
+        >
+          Stop
+        </button>
+        <button
+          id="reset"
+          class="bg-red-700 border-2 border-black rounded-lg px-3 mx-4 w-32 h-10"
+          onclick="reset()"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/app.js"></script>
   </body>
 </html>
