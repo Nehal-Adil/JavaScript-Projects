@@ -1,4 +1,4 @@
-// console.log("Working");
+console.log("Working");
 
 // Required Variables
 var hr = 0;
