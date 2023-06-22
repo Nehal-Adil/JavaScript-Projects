@@ -4,6 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meal App</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="./input.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <div id="header" class="">
+      <!-- Navbar -->
+      <div id="nav" class="flex justify-between items-center bg-red-600 h-12">
+        <a href="#" class="text-2xl text-white mx-2">Meal App</a>
+        <!-- <button class="w-8 mx-2" type="button">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/6015/6015685.png"
+            alt=""
+          />
+        </button> -->
+
+        <!-- Favourites -->
+        <div class="w-44 h-44 border-2 border-green-400 p-14 m-8">
+          <div class="">
+            <h5 class="text-2xl">Favourites</h5>
+            <button type="button" class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/8860/8860516.png"
+                alt="close"
+                class="w-5"
+              />
+            </button>
+          </div>
+          <div id="favourites-body" class="">
+            <div class="spinner-border" role="status">
+              <span class="">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Heading section-->
+      <div id="heading" class="">
+        <h1>Find Meals For You</h1>
+      </div>
+
+      <!-- Search -->
+      <div id="search-bar" class="">
+        <input type="search" id="my-search" class="" placeholder="Search.." />
+      </div>
+
+      <!-- text -->
+      <div id="heading-text" class="">
+        <h5>Your Search Results:</h5>
+      </div>
+    </div>
+
+    <!--full body main section-->
+    <div id="main" class="">Main Meal Cards</div>
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+  </body>
 </html>
