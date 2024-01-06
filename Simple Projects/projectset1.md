@@ -1,13 +1,14 @@
 # Basic JavaScript Projects
 
 ## Project Link🔖
+
 [Click Here](https://stackblitz.com/~/github.com/Nehal-Adil/JavaScript-Projects)
 
 # Solution Code
 
 ## Project 1
-```javascript
 
+```javascript
 const buttons = document.querySelectorAll(".button");
 
 const body = document.querySelector("body");
@@ -41,25 +42,65 @@ buttons.forEach(function (button) {
     }
   });
 });
-
 ```
 
-# Project 2
+## Project 2
+
+```javascript
+const form = document.querySelector("form");
+
+// this height will give you empty value
+// const height = parseInt(document.querySelector("#height").value);
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector("#height").value);
+  const weight = parseInt(document.querySelector("#weight").value);
+  const results = document.querySelector("#results");
+  const weightResults = document.querySelector("#results2");
+
+  if (height === "" || height < 0 || isNaN(height)) {
+    results.innerHTML = `Please give a valid height ${height}`;
+  } else if (weight === "" || weight < 0 || isNaN(weight)) {
+    results.innerHTML = `Please give a valid weight ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+
+    //show results
+    results.innerHTML = `<span>${bmi}</span>`;
+
+    if (bmi < 18.6) {
+      weightResults.innerHTML = `<p>Under Weight</p>`;
+    } else if (bmi >= 18.6 && bmi < 24.9) {
+      weightResults.innerHTML = `<p>Normal Range</p>`;
+    } else {
+      weightResults.innerHTML = `<p>Over Weight</p>`;
+    }
+  }
+});
+```
+
+## Project 3
+
+```javascript
+const clock = document.querySelector("#clock");
+
+setInterval(function () {
+  let date = new Date();
+  //   console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
+
+## Project 4
+
 ```javascript
 
 ```
 
-# Project 3
-```javascript
+## Project 5
 
-```
-
-# Project 4
-```javascript
-
-```
-
-# Project 5
 ```javascript
 console.log("Keyboard");
 
@@ -84,10 +125,10 @@ window.addEventListener("keydown", (e) => {
         </div>
     `;
 });
-
 ```
 
-# Project 6
+## Project 6
+
 ```javascript
 console.log("Unlimited Colors");
 
@@ -124,5 +165,4 @@ const stopChangingColor = function () {
 document.querySelector("#start").addEventListener("click", startChangingColor);
 
 document.querySelector("#stop").addEventListener("click", stopChangingColor);
-
 ```
