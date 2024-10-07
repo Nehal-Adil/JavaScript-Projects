@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #cdb4db;
+  color: #fff;
+  text-align: center;
+}
+
+.heading {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 10vmin;
+}
+
+.container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 0 5px 2px #343a40;
+  cursor: pointer;
+  font-size: 10vmin;
+  color: #fff;
+  background-color: #a2d2ff;
+}
+
+.reset-btn {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 2px #343a40;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #a2d2ff;
+}
+
+#new-btn {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 6px 7px 2px 1px #343a40;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #8385ff;
+}
+
+.winner {
+  font-size: 10vmin;
+}
+
+.winner-msg {
+  height: 100vmin;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
